@@ -1,1 +1,1 @@
-# Translator-
+# Translator
