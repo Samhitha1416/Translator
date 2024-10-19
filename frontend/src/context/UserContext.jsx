@@ -46,9 +46,11 @@ export const UserProvider = ({ children }) => {
       setUser(data.user);
       fetchChats();
     } catch (error) {
-      toast.error(error.response.data.message);
+      console.error(error); // Log the entire error
+      toast.error(error.response ? error.response.data.message : "An error occurred");
       setBtnLoading(false);
-    }
+  }
+  
   }
   const [loading, setLoading] = useState(true);
 

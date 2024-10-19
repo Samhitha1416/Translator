@@ -50,7 +50,7 @@ const sendMail = async (email, subject, otp) => {
 <body>
     <div class="container">
         <h1>OTP Verification</h1>
-        <p>Hello ${email} your (One-Time Password) for your account verification is.</p>
+        <p>Hello ${email} your OTP for your account verification is</p>
         <p class="otp">${otp}</p> 
     </div>
 </body>

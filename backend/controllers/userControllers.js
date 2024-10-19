@@ -20,7 +20,7 @@ export const loginUser = async (req, res) => {
       expiresIn: "5m",
     });
 
-    await sendMail(email, "Translator", otp);
+    await sendMail(email, "Language Connect", otp);
 
     res.json({
       message: "Otp send to your mail",
